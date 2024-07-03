@@ -2,6 +2,10 @@ const repeatString = function(string, num) {
 
   let repeatedString = string;
 
+  if (num == 0) {
+    return '';
+  }
+
   for (let i = 1; i < num; i++) {
     repeatedString += string;
   }
