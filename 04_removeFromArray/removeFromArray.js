@@ -11,6 +11,7 @@ const removeFromArray = function(array, ...args) {
   }
   
   const newArray = array.filter(isInArray);
+  
   return newArray;
 };
 
