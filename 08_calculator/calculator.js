@@ -14,12 +14,20 @@ const multiply = function(arr) {
   return arr.reduce((multi, num) => multi * num, 1);
 };
 
-const power = function() {
-	
+const power = function(num, pow) {
+	let result = 1;
+  for (let i = 0; i < pow; i++) {
+    result *= num;
+  }
+  return result;
 };
 
-const factorial = function() {
-	
+const factorial = function(fac) {
+	let result = 1;
+  for (let i = 1; i <= fac; i++) {
+    result = result * i;
+  }
+  return result;
 };
 
 // Do not edit below this line
