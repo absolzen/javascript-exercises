@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const fibonacci = function(num) {
+      let arr = [0];
+      if (num === 0) 
+        return arr[0];
+
+      arr.push(1);
+      for (i = 1; i < num; i++) {
+        let result = arr.slice(-2).reduce((sum, current, index, array) => sum + current);
+        arr.push(result);
+      }
+      return arr.slice(-1).toString();
+    };
+
+    fibonacci(4);
+  </script>
+</body>
+</html>
